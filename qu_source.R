@@ -1,7 +1,7 @@
 #-----------------------------------------------------------------------------
 source("https://raw.githubusercontent.com/statpnu/R/master/Rsam01.R")
 
-qu_source = function(data, p=0.5, conf=0.95, source = c("test", "statistic", "p.value", "noncentrality", "conf.int"))
+qt.source = function(data, p=0.5, conf=0.95, source = c("test", "statistic", "p.value", "noncentrality", "conf.int"))
 {
 	demand<-match.arg(source)
 	if (demand == "test"){
